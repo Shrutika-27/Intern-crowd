@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Condensed' ;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #0a0a0a;
+    color: #fff;
+}
+#header{
+    width: 90%;
+    height: 100vh;
+    font-family: 'Ubuntu Condensed' ;
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    
+    display : flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;          
+    left: 0;
+    right: 0;
+    background-color:#262626; /* Add your desired background color */
+    padding: 10px;     /* Add padding to create space around the navbar */
+    z-index: 100;
+}
+.logo{
+    
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin:10px 20px;
+    font-family: 'Ubuntu Condensed' ;
+}
+
+nav ul li a{
+    color:#ffd;
+    text-decoration:none; 
+    font: size 18px;;
+    
+    position: relative;
+    font-family: ' sans-serif !important' ;
+}
+nav ul li a::after{
+    content:'';
+    width : 0;
+    height : 3px;
+    background :#ff004f;
+    position : absolute;
+    left : 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top:20%;
+    font-size:30px;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+
+#about{
+    padding : 80px 0;
+    color:#ababab;
+
+}
+.row{
+    display:flex;
+    justify-content : space-between;
+}
+
+.about-col1 {
+    max-width: 35%; /* Set the maximum width to 20% of the container */
+    padding: 30px 20px;
+}
+
+.about-col1 img {
+    width: 100%; /* Set a fixed width for the image */
+    height: 400px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+    border-radius: 10px;
+}
+
+.about-col2{
+    flex-basis:60%;
+    width: 90%;
+    margin: 0 auto;
+}
+.about-col2 p {
+    text-align: justify;
+    margin-bottom: 20px; /* Add a gap between the paragraphs */
+    line-height: 1.3; 
+}
+
+-------------------projects----------------------------
+
+#projects{
+    padding: 30px 0;
+
+}
+.projects-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top:50px;
+}
+.projects-list div{
+    background: #433a3d;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: background 0.7s, transform 0.7s;
+}
+.projects-list div a {
+   text-decoration: none;
+   color: #ff004f;
+   font-size: 10px;
+   margin-top: 20px;
+   display: inline-block;
+}
+.projects-list a{
+    text-decoration: none;
+    color:white;
+}
+.projects-list div:hover{
+    background: #891038;
+    transform: translateY(-10px);
+}
+.head2{
+    text-align: center;
+}
+/*----------------------internships ----------*/
+#internships{
+padding: 50px 0;
+}
+.work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top:50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+   
+}
+.internships-list i {
+  
+    font-size: 40px; 
+  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+  }
+/*-----------------------------contact----------------------------*/
+
+.contact-left{
+    flex-basis: 35%; 
+}
+.contact-left{
+    flex-basis: 60%; 
+}
+.contact-left p{
+    margin-top:30px;
+
+}
+.contact-left p i{
+    color:#ababab;
+    margin-right:15px;
+    font-size:25px;
+
+}
+.contact-left p i:hover{
+    color: #ff004f;
+    
+}
+
+.pdf{
+    text-decoration: none;
+    margin-top: 45px;
+    padding: 15px 35px; 
+    font-size: 15px; 
+    background-color: #ff004f; 
+    color: white; 
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+    transition: background-color 0.3s, transform 0.2s;
+    }
+
+        /* Styles for the .pdf class on hover */
+.pdf:hover {
+    background-color: #c5718d; /* Change background color on hover */
+    transform: scale(1.1); /* Apply a slight scale increase on hover */
+}
+
+/*-----------------------------contact form----------------------------*/
+.contact-right form {
+    /* Adjust the width and margin as per your layout */
+    width: 100%;
+}
+
+form  input, form textarea{
+    /* Adjust the spacing and alignment of form elements as per your preference */
+   width:100%;
+   border: 0;
+   outline: none;
+   background-color: #262626;
+   padding: 15px;
+   margin:15px 0 ;
+   color: #fff;
+   font-size: 13px;
+   border-radius: 6px;
+}
+
+
+button {
+    /* Adjust the styles for the Submit button */
+    padding: 10px 30px;
+    background-color: #ff004f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Add transition for a smooth hover effect */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    /* Change background color on hover */
+    background-color: #b35d79;
+}
+
+.copyright{
+    margin-top: 40px;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    background: #262626;
+}
