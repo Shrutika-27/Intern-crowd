@@ -12,14 +12,7 @@ body{
     background: #0a0a0a;
     color: #fff;
 }
-#header{
-    width: 90%;
-    height: 100vh;
-    font-family: 'Ubuntu Condensed' ;
-    background-image: url(images/background.jpeg);
-    background-size: cover;
-    background-position: center;
-}
+
 .container{
     padding: 10px 10%;
 }
@@ -268,3 +261,157 @@ button:hover {
     padding: 20px;
     background: #262626;
 }
+/* Add this CSS to your existing styles */
+nav ul li {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #262626;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Style the dropdown menu items */
+.dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background-color: #891038;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Add this CSS to your existing styles */
+nav ul li {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #262626;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Style the dropdown menu items */
+.dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background-color: #891038;
+}
+
+/* Additional styles for the SignUp page */
+.container {
+    padding: 10px 10%;
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #262626;
+}
+
+.signup-form h1 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #ff004f;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff004f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #b35d79;
+}
+
+/* Adjust the styles for mobile devices */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    nav ul li {
+        margin: 5px 20px;
+    }
+    .header-text {
+        margin-top: 10%;
+    }
+    .about-col1 img {
+        height: 200px;
+    }
+    .about-col2 {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .about-col2 p {
+        font-size: 14px;
+    }
+}
+
